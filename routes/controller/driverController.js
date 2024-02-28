@@ -1,5 +1,6 @@
 import pool from "../../config/config.js";
 import query from "../../utils/query.js";
+import bcrypt from 'bcrypt';
 
 export const getDriverDetails = (req, res) => {
   pool.getConnection(async (err, conn) => {
